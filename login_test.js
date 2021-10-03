@@ -9,4 +9,5 @@ Scenario('TC_Login_01', ({ I }) => {
     I.click({xpath: `//*[@id="post-504"]/div/div/form/p[3]/button`})
     locate({xpath: `//*[@id="wp-admin-bar-my-account"]/a`}).withText("Chào, shinboizz")
     //I.see({xpath: `/html/body/div/div[1]/header/div[2]/div/div/nav/div[1]/a/span`}, "Khang Truong Gia")
+
 });
