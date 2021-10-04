@@ -9,7 +9,7 @@ exports.config = {
   output: './output',
   helpers: {
     Playwright: {
-      url: 'http://store67.ezyro.com/',
+      url: 'http://store67.ezyro.com',
       show: true,
       browser: 'chromium'
     }
