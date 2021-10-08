@@ -1,4 +1,4 @@
-Feature('order_test');
+Feature('testFile');
 
 Scenario('test something', ({ I }) => {
 

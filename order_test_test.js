@@ -10,7 +10,7 @@ order.add(['khang', 'truong dntu', 'tpbienhoa', '032445533', 'khang@gmailcom']);
 
 
 
-Data(order).Scenario('TC_Order', ({ I, current }) => {
+Data(order).Scenario('TC_order', ({ I, current }) => {
     I.amOnPage("/cua-hang/");
     I.click({ xpath: `//*[@id="main"]/div/ul/li[1]/div[2]/a[2]`});
     I.click({ xpath: `//*[@id="main"]/div/ul/li[1]/div[2]/a[3]`});
