@@ -31,11 +31,13 @@ Scenario('TC_logout', ({ I }) => {
 Feature('addshipping'); // npx codecept-ui --app
 let shipping = new DataTable(['Fname', 'Lname', 'Ctyname', 'country', 'address1', 'address2', 'city', 'code']);
 shipping.add(['Phu', 'Le', 'shinboizz', 'VN', 'dongnai', 'dntu', 'bienhoa', '6000']);
+shipping.add(['', '', '', '', '', '', '', '']);
+
 
 
 Data(shipping).Scenario('TC_Shipping', ({ I, current }) => {
     I.amOnPage("/tai-khoan/");
-    I.fillField({ xpath: `//*[@id="username"]` }, "shinboizz");
+    I.fillField({ xpath: `//*[@id="username"]` }, "user1");
     I.fillField({ xpath: `//*[@id="password"]` }, "lequangphu123");
     I.click({xpath: `//*[@id="post-504"]/div/div/form/p[3]/button`});
     I.click({ xpath:`//*[@id="post-504"]/div/div/nav/ul/li[4]/a`});

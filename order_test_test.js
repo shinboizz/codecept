@@ -2,11 +2,11 @@
 const { pause } = require("codeceptjs");
 Feature('order'); // npx codecept-ui --app
 let order = new DataTable(['name', 'address', 'city', 'phone', 'email']);
-order.add(['khang', 'truong dntu', 'tpbienhoa', '032445533', 'khang@gmail.com']);
+order.add(['khang', 'truong dntu', 'tpbienhoa', '012345', 'khang@gmail.com']);
 order.add(['', '', '', '', '']);
 order.add(['khang', 'truong dntu', 'tpbienhoa', 'xinchao', 'khang@gmail.com']);
-order.add(['khang', 'truong dntu', 'tpbienhoa', '032445533', 'khanggmail.com']);
-order.add(['khang', 'truong dntu', 'tpbienhoa', '032445533', 'khang@gmailcom']);
+order.add(['khang', 'truong dntu', 'tpbienhoa', '012345', 'khanggmail.com']);
+order.add(['khang', 'truong dntu', 'tpbienhoa', '012345', 'khang@gmailcom']);
 
 
 
@@ -28,11 +28,11 @@ Data(order).Scenario('TC_order', ({ I, current }) => {
 
 Feature('luckyball'); // npx codecept-ui --app
 let luckyball = new DataTable(['Fname', 'Lname', 'email', 'phone', 'address', 'number']);
-luckyball.add(['khang', 'gia', 'khang@gmail.com', '03344455', 'bienhoa', '60']);
+luckyball.add(['khang', 'gia', 'khang@gmail.com', '012345', 'bienhoa', '60']);
 luckyball.add(['', '', '', '', '', '']);
-luckyball.add(['khang', 'gia', 'khanggmail.com', '03344455', 'bienhoa', '60']);
-luckyball.add(['khang', 'gia', 'khang@gmailcom', '03344455', 'bienhoa', '60']);
-luckyball.add(['khang', 'gia', 'khang@gmail.com', '03344455', 'bienhoa', 'aaa']);
+luckyball.add(['khang', 'gia', 'khanggmail.com', '012345', 'bienhoa', '60']);
+luckyball.add(['khang', 'gia', 'khang@gmailcom', '012345', 'bienhoa', '60']);
+luckyball.add(['khang', 'gia', 'khang@gmail.com', '012345', 'bienhoa', 'aaa']);
 
 
 Data(luckyball).Scenario('TC_luckyball', ({ I, current }) => {
